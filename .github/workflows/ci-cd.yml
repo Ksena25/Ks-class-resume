@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: clone repo
         uses: actions/checkout@v3
-      - name: Aws credentials config  # aws account credentials configuration
+      - name: Aws creds config  # aws account credentials configuration
         uses: aws-actions/configuration-aws-credentials@v4
         with:
           role-to-assume: ${{env.AWS_ROLE}} # OIDC Open ID Connect which is more secure than github sercet and variables
